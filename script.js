@@ -78,8 +78,8 @@ async function updateWeatherInfo(city) {
   countryTxt.textContent = country;
   tempTxt.textContent = Math.round(temp) + "°C";
   conditionTxt.textContent = main;
-  tempTxt.textContent = humidity + "%";
-  tempTxt.textContent = speed + "km/h";
+  humidityValueTxt.textContent = humidity + "%";
+  windValueTxt.textContent = speed + "km/h";
 
   currentDateTxt.textContent = getCurrentDate();
 
@@ -143,3 +143,4 @@ function showDisplaySection(section) {
 
   section.style.display = "flex";
 }
+
